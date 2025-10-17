@@ -48,14 +48,23 @@
     .single_server {
     margin-top: 2.5rem !important;
 }
+
     /* Server */
     /* Package */
+    .single_package {
+        margin-top: 2.5rem !important;
+    }
     .single_package .tag {
     font-size: 1.8rem;
 }
 .single_package .price {
     font-size: 1.2rem;
 }
+/* Area */
+.single_area {
+    margin-top: 2.5rem !important;
+}
+/* Area */
     /* Package */
     /* Footer */
     .footer {
