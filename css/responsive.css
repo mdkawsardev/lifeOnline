@@ -30,7 +30,7 @@
     min-height: 70vh;
 }
 .banner .title {
-    width: 90%;
+    width: fit-content;
     top: 35%;
 }
 .title_heading {
