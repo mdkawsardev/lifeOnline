@@ -6,7 +6,7 @@
 }
 
 ::selection {
-    background-color: var(--blue);
+    background-color: var(--red);
     color: #ffffff;
 }
 ::-webkit-scrollbar {
@@ -45,6 +45,7 @@
     bottom: 30px;
     z-index: 50;
     cursor: pointer;
+    box-shadow: 0 5px 15px #68686865;
     &:hover {
         border: 1px solid #FFFFFF;
     }
@@ -72,12 +73,15 @@ body {
     display: inline-block;
     padding: 20px !important;
     color: red !important;
+    border-block: 1px solid transparent;
     &:hover {
         color: var(--blue) !important;
     }
 }
 .link.active {
     color: var(--blue) !important;
+    border-block: 1px solid var(--blue);
+    transition: .3s linear;
 }
 .banner {
     background-image: url(../content/images/banner.jpg);
@@ -147,17 +151,52 @@ body {
 
 }
 
+/* Server Section */
+.single_server {
+    height: 250px;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.single_server .serverName {
+    position: absolute;
+    inset: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    color: #FFFFFF;
+    transition: .2s linear;
+    text-decoration: none;
+}
+.single_server:hover .serverName {
+    font-size: 1.1rem;
+}
+.single_server::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #0000006c;
+    transition: .2s linear;
+}
+.single_server:hover::before {
+    height: 100%;
+}
+/* Server Section */
+
 /* Packages Section */
 .packages {}
 .packages .single_package {
-    min-height: 500px;
     padding: 1.5rem;
     border: 1px solid var(--red);
     border-radius: 1rem;
     box-shadow: 0 5px 15px #c8c8c8;
 }
 .single_package .tag {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     display: block;
     font-size: 3rem;
     font-weight: 500;
@@ -172,26 +211,7 @@ body {
     font-size: 1rem;
     color: var(--blue);
 }
-.pcg:nth-child(2) .single_package {
-    position: relative;
-    overflow: hidden;
-}
-.pcg:nth-child(2) .single_package::before {
-    content: "Popular";
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    background: var(--blue);
-    top: -35px;
-    right: -60px;
-    transform: rotate(45deg);
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 10px;
-    font-size: 1.2rem;
-}
+
 /* Packages Section */
 
 /* Area Section */
@@ -210,8 +230,8 @@ body {
 
 /* Footer */
 .footer {
-    padding: 2rem;
-    background-color: var(--red);
+    padding: 2rem 0;
+    background-color: var(--blue);
     color: #FFFFFF;
 }
 .contact span {
