@@ -38,7 +38,7 @@
 }
 .title_heading:first-child {
     width: 100%;
-    font-size: 48px;
+    font-size: 52px;
 }
 .downArrow span {
     font-size: 1.5rem;
@@ -52,15 +52,139 @@
     font-size: 1.2rem;
 }
     /* Package */
+    /* Footer */
+    .footer {
+        padding-bottom: 10px;
+    }
+    /* Footer */
 }
 /* small */
 @media (min-width: 576px) and (max-width: 767.98px){
+    .common_section {
+    padding: 50px 0;
+}
+.common_section .common_title {
+    font-size: 3rem;
+}
+    /* Header */
+    .logo {
+    width: 120px;
+    display: inline-block;
+}
+.menu {
+    margin-top: 20px;
+}
+.menu li a {
+    padding: 10px !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+    /* Header */
+    /* Banner */
+    
+    .banner {
+    min-height: 78vh;
+}
+.banner .title {
+    width: 90%;
+    top: 35%;
+}
+.title_heading {
+    font-size: 2rem;
+}
+.title_heading:first-child {
+    width: 100%;
+    font-size: 70px;
+}
+.downArrow span {
+    font-size: 1.5rem;
+}
+    /* Banner */
+    /* Package */
+    .single_package .tag {
+    font-size: 1.8rem;
+}
+.single_package .price {
+    font-size: 1.2rem;
+}
+    /* Package */
+    /* Footer */
+    .footer {
+        padding-bottom: 10px;
+    }
+    /* Footer */
 }
 /* medium */
 @media (min-width: 768px) and (max-width: 991.98px){
+    .common_section {
+    padding: 60px 0;
+}
+.common_section .common_title {
+    font-size: 2.5rem;
+}
+    /* Header */
+.menu {
+    margin-top: 40px;
+}
+.menu li a {
+    padding: 15px !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+    /* Header */
+    /* Banner */
+    
+    .banner {
+    min-height: 78vh;
+}
+.banner .title {
+    width: 90%;
+    top: 35%;
+}
+.title_heading {
+    font-size: 2.5rem;
+}
+.title_heading:first-child {
+    width: 100%;
+    font-size: 90px;
+}
+.downArrow span {
+    font-size: 1.5rem;
+}
+    /* Banner */
+    /* Package */
+    .single_package .tag {
+    font-size: 1.8rem;
+}
+.single_package .price {
+    font-size: 1.2rem;
+}
+    /* Package */
+    /* Footer */
+    .footer {
+        padding-bottom: 10px;
+    }
+    /* Footer */
 }
 /* large */
 @media (min-width: 992px) and (max-width: 1199.98px){
+    .common_section {
+    padding: 70px 0;
+}
+.common_section .common_title {
+    font-size: 2.7rem;
+}
+    .single_package .tag {
+    font-size: 2rem;
+}
 }
 /* extra large */
 @media (min-width: 1200px) and (max-width: 1399.98px){
