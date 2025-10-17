@@ -1,7 +1,7 @@
-// let h1 = document.querySelector('.title h1');
-// setInterval(() => {
-//  h1.classList.toggle('lightning');
-// }, 2000)
+let h1 = document.querySelector('.title h1');
+setInterval(() => {
+ h1.classList.toggle('lightning');
+}, 2000)
 
 let toTopBtn = document.querySelector('.toTop');
 window.addEventListener('scroll', () => {
