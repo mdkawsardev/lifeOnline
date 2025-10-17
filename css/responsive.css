@@ -44,6 +44,11 @@
     font-size: 1.5rem;
 }
     /* Banner */
+    /* Server */
+    .single_server {
+    margin-top: 2.5rem !important;
+}
+    /* Server */
     /* Package */
     .single_package .tag {
     font-size: 1.8rem;
@@ -186,8 +191,4 @@
     font-size: 2rem;
 }
 }
-/* extra large */
-@media (min-width: 1200px) and (max-width: 1399.98px){
-}
-/* extra extra large */
-@media (min-width: 1400px){}
+
