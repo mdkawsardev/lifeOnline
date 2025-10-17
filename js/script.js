@@ -1,3 +1,9 @@
+let preloader = document.querySelector('.preloader');
+setTimeout(() => {
+    document.body.classList.remove('overflow-hidden');
+    preloader.classList.add('d-none');
+}, 1500);
+
 let h1 = document.querySelector('.title h1');
 setInterval(() => {
  h1.classList.toggle('lightning');
@@ -12,6 +18,9 @@ window.addEventListener('scroll', () => {
 }
 })
 toTopBtn.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: "smooth"});
+})
+window.addEventListener('load', () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 })
 
